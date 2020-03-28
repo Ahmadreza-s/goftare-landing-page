@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="3052 5261 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="linkedin" transform="translate(3052 5261)">
+    <g id="Group_51" data-name="Group 51" transform="translate(0 10)">
+      <g id="Group_50" data-name="Group 50">
+        <rect id="Rectangle_204" data-name="Rectangle 204" class="cls-1" width="7.156" height="22"/>
+      </g>
+    </g>
+    <g id="Group_53" data-name="Group 53" transform="translate(10 9.994)">
+      <g id="Group_52" data-name="Group 52">
+        <path id="Path_12" data-name="Path 12" class="cls-1" d="M176.65,160.163l-.225-.075c-.094-.025-.194-.037-.288-.056a6.467,6.467,0,0,0-1.281-.131c-4.175,0-6.819,3.031-7.687,4.206v-4.2H160v22h7.156v-12s5.406-7.531,7.688-2v14H182V167.063A7.14,7.14,0,0,0,176.65,160.163Z" transform="translate(-160 -159.9)"/>
+      </g>
+    </g>
+    <g id="Group_55" data-name="Group 55">
+      <g id="Group_54" data-name="Group 54">
+        <circle id="Ellipse_4" data-name="Ellipse 4" class="cls-1" cx="3.5" cy="3.5" r="3.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

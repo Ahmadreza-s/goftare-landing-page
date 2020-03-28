@@ -1,0 +1,35 @@
+<div>
+  <div class="modal-body">
+
+    <div *ngIf="getType()==1">
+
+      <mat-icon style="margin-left: calc(50% - 12px);"
+                svgIcon="warning"></mat-icon>
+
+      <p style="margin-top: 10px;font-size: 14px;padding-left: 20px;padding-right: 20px;line-height: 2.1;color: #292929;text-align: center;direction: rtl;">
+        ایمیل وارد شده قبلا ثبت نام شده است، از قسمت ورود، وارد شوید
+      </p>
+
+
+    </div>
+
+
+    <div *ngIf="getType()==2">
+
+      <mat-icon style="margin-left: calc(50% - 12px);"
+                svgIcon="warning"></mat-icon>
+
+      <p style="margin-top: 10px;font-size: 14px;padding-left: 10px;padding-right: 10px;line-height: 2.1;color: #292929;text-align: center;direction: rtl;">
+        ایمیل وارد شده ثبت نام نشده است، از قسمت ثبت نام اقدام کنید</p>
+
+
+    </div>
+
+
+  </div>
+
+  <button (click)="action()" mat-raised-button
+          style="color: white;background: #0092D3;width: 100%;border-top-left-radius: 0 !important;border-top-right-radius: 0 !important;height: 50px;box-shadow: none">
+    {{getType()==1?'ورود به حساب کاربری':'ثبت نام'}}
+  </button>
+</div>

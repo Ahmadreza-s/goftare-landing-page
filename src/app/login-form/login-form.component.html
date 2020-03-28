@@ -1,0 +1,41 @@
+<div class="modal-header">
+  <h4 class="modal-title mt1">فرم ورود</h4>
+  <div class="modal-title mt2">
+    <img src="assets/img/logo.svg"/>
+    گفتاره
+  </div>
+
+  <button class="mt2" id="registerBtn" (click)="showRegisterDialog()" mat-raised-button>ثبت نام</button>
+
+  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+    <span style="color:  white" aria-hidden="true">&times;</span>
+  </button>
+
+</div>
+<div class="modal-body">
+  <p class="headerTextDialog">برای ورود، اطلاعات زیر را پر کنید</p>
+  <form class="example-form" >
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="ایمیل" [formControl]="email" >
+      <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="example-full-width" style="padding-bottom: 0">
+      <input matInput placeholder="رمز عبور" [formControl]="password" [type]="hide ? 'password' : 'text'" autocomplete="new-password"/>
+      <mat-icon *ngIf="password.value.toString().length!=0" matSuffix (click)="hide = !hide" svgIcon="{{hide ? 'visibility_on' : 'visibility_off'}}"></mat-icon>
+      <mat-error *ngIf="password.invalid">{{getPasswordErrorMessage()}}</mat-error>
+    </mat-form-field>
+
+    <br>
+    <a (click)="showForgetPassDialog()" style="margin-left: 10%;color: #0092D3;cursor: pointer;">رمز عبورم را فراموش کرده ام</a>
+
+  </form>
+
+  <button *ngIf="!loading" mat-raised-button="" class="btn loginBtn" (click)="login()">ورود</button>
+  <mat-spinner *ngIf="loading" [diameter]="50" [strokeWidth]="2" style="margin-left: calc(50% - 25px)"></mat-spinner>
+  <p class="mt1" id="text2">ثبت نام نکردی؟ <span style="color: #0092D3;cursor: pointer" (click)="showRegisterDialog()">ثبت نام</span></p>
+
+</div>

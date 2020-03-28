@@ -1,0 +1,339 @@
+.fullScreen {
+  background-color: rgba(238, 238, 238, .7);
+}
+
+.cart {
+  height: 430px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: .25rem;
+}
+
+.cartHeader {
+  color: white;
+  font-size: 32px;
+  margin-top: 80px;
+  text-align: center;
+  transition: .25s linear;
+  transition-delay: .25s;
+}
+
+.cartDesc {
+  font-size: 18px;
+  color: white;
+  direction: rtl;
+  text-align: center;
+  margin-top: 100px;
+  padding: 30px;
+  transition: .25s linear;
+}
+
+.cartButton {
+  border-radius: .25rem;
+  position: absolute;
+  bottom: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: calc(100% - 70px);
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+  height: 64px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s,visibility 0s,bottom .5s;
+  transition-delay: 0s,.5s,0s;
+}
+
+.cart:hover .cartHeader {
+  margin-top: 32px;
+  transition: .25s linear;
+}
+
+.cart:hover .cartDesc {
+  margin-top: 42px;
+  transition: .25s linear;
+}
+
+.cart:hover .cartButton{
+  visibility: visible;
+  bottom: 32px;
+  opacity: 1;
+  transition: opacity .25s,bottom .25s;
+
+
+}
+
+.cart1 {
+  background: #296680;
+}
+.cart1:hover {
+  background: linear-gradient(rgba(41, 102, 128, .8), rgba(41, 102, 128, .8)), url("assets/img/family_background.jpg") no-repeat !important;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+}
+
+.cart2 {
+  background: #42A17D;
+}
+.cart2:hover {
+  background: linear-gradient(
+    rgba(66, 161, 125, .7),
+    rgba(66, 161, 125, .7)
+  ),
+  url("assets/img/marriage_background.jpg") no-repeat !important;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+}
+
+
+.cart3 {
+  background: #1C4334;
+}
+.cart3:hover {
+  background: linear-gradient(
+    rgba(28, 67, 52, .8),
+    rgba(28, 67, 52, .8)
+  ), url("assets/img/depression_background.jpg") no-repeat !important;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+
+}
+.col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #0092D3;
+  color: white;
+  height: 64px;
+  width: 188px;
+  font-size: 22px;
+  display: inline-block;
+}
+
+.hint {
+  color: #545454;
+  font-size: 20px;
+  text-align: right;
+  display: inline-block;
+  margin-left: 18px;
+  font-weight: normal;
+}
+
+.headerText {
+  color: #292929;
+  font-size: 32px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+
+/* all mobile sizes */
+@media only screen and (min-width: 320px) and (max-width: 767px){
+  .container{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .row{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .col-12{
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .headerText {
+    font-size: 24px;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+
+  .cart {
+    height: 320px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+  .cartHeader {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+
+  .cartDesc {
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 15px;
+  }
+
+  .cartButton {
+    position: absolute;
+    bottom: 32px;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: calc(100% - 60px);
+    font-size: 18px;
+    height: 50px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .cart1 {
+    background: linear-gradient(rgba(28, 67, 52, 1), rgba(28, 67, 52, 1));
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+  }
+  .cart1:hover {
+    background: linear-gradient(rgba(28, 67, 52, 1), rgba(28, 67, 52, 1));
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+  }
+  .cart2 {
+    background: linear-gradient(
+      rgba(66, 161, 125, 1),
+      rgba(66, 161, 125, 1));
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+  }
+  .cart2:hover{
+    background: linear-gradient(
+      rgba(66, 161, 125, 1),
+      rgba(66, 161, 125, 1));
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+  }
+  .cart3 {
+    background: linear-gradient(
+      rgba(41, 102, 128, 1),
+      rgba(41, 102, 128, 1)
+    );
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+
+  }
+  .cart3:hover{
+    background: linear-gradient(
+      rgba(41, 102, 128, 1),
+      rgba(41, 102, 128, 1)
+    );
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+  }
+
+  .cart:hover .cartHeader {
+    margin-top: 30px;
+    transition: unset;
+  }
+
+  .cart:hover .cartDesc {
+    margin-top: 30px;
+    transition: unset;
+  }
+
+
+  .btn{
+    font-size: 18px;
+    width: 140px;
+    height: 50px;
+    position: absolute;
+    right : calc(50% - 70px);
+    margin-top: 37px;
+  }
+  .hint{
+    font-size: 18px;
+    text-align: center;
+    margin-left: 0;
+    display: block;
+  }
+  .hintSection{
+    padding-top: 10px !important;
+    padding-bottom: 80px !important;
+  }
+}
+
+/* small mobiles */
+@media only screen and (min-width: 320px) and (max-width: 374px){
+  .headerText{
+    font-size: 20px;
+  }
+
+}
+/* medium mobiles */
+@media only screen and (min-width: 375px) and (max-width: 424px){
+
+}
+
+/* large mobiles */
+@media only screen and (min-width: 425px) and (max-width: 767px){
+
+  .cartHeader{
+    font-size: 26px;
+  }
+  .cartDesc{
+    font-size: 16px;
+  }
+
+}
+
+/* tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+  .cart{
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 400px;
+  }
+  .cartHeader{
+    font-size: 26px;
+    margin-top: 60px;
+  }
+  .cartDesc{
+    font-size: 16px;
+    margin-top: 80px;
+    padding: 5px;
+    text-align: justify;
+  }
+  .cart:hover .cartHeader {
+    margin-top: 40px;
+  }
+
+  .cart:hover .cartDesc {
+    margin-top: 30px;
+  }
+  .cartButton {
+    margin-right: 5px;
+    margin-left: 5px;
+    width: calc(100% - 40px);
+    font-size: 14px;
+    height: 55px;
+  }
+  .btn{
+    margin-left: 50px
+  }
+
+}

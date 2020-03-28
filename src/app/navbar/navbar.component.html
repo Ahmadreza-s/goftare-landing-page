@@ -1,0 +1,76 @@
+<!-- for Desktop -->
+
+<nav class="d-none d-lg-flex navbar navbar-expand-sm bg-light navbar-light sticky-top" style="direction: rtl;padding-left: 0">
+  <a class="navbar-brand" (click)="goToHome()">
+    <img src="assets/img/logo.svg"/>
+    گفتاره
+  </a>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item ">
+      <a class="nav-link app-howt" (click)="goToHowTo()">چگونه مشاوره بگیرم؟</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link app-servi" (click)="goToServices()">خدمات مشاوره</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link app-wh" (click)="goToWhy()">چرا مشاوره آنلاین؟</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link app-appli" (click)="goToApplications()">اپلیکیشن موبایل</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="goToArticles()">مقالات</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link app-contac" (click)="goToContact()">تماس با ما</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link app-abou" (click)="goToAbout()">درباره ما</a>
+    </li>
+  </ul>
+  <button mat-raised-button class="btn12 animated" (click)="showRegister()">شروع مشاوره</button>
+  <button mat-raised-button class="btn" (click)="showLogin()">ورود</button>
+</nav>
+
+<!-- for Mobile -->
+
+<nav class="d-flex d-lg-none navbar navbar-expand-sm bg-light navbar-light sticky-top" style="direction: rtl">
+
+  <button id="menuBtn" mat-icon-button style="position: absolute;right: 8px;">
+    <mat-icon [svgIcon]="menuButtonIcon" id="menuIcon" style="fill: #545454"></mat-icon>
+  </button>
+
+  <a class="navbar-brand float-right" (click)="goToHome()">
+    <img src="assets/img/logo.svg"/>
+    گفتاره
+  </a>
+
+
+  <button mat-raised-button class="btn float-left" (click)="showLogin()">ورود</button>
+
+
+
+  <div id="myNav" class="overlay">
+    <div class="overlay-content">
+
+      <a class="app-howt" (click)="goToHowTo()">چگونه مشاوره بگیرم؟</a>
+
+      <a class="app-servi" (click)="goToServices()">خدمات مشاوره</a>
+
+      <a class="app-wh" (click)="goToWhy()">چرا مشاوره آنلاین؟</a>
+
+      <a class="app-appli" (click)="goToApplications()">اپلیکیشن موبایل</a>
+
+      <a (click)="goToArticles()">مقالات</a>
+
+      <a class="app-contac" (click)="goToContact()">تماس با ما</a>
+
+      <a class="app-abou" (click)="goToAbout()">درباره ما</a>
+
+      <p>می خواهید مشاوره بگیرید؟</p>
+      <button (click)="showRegister()" mat-button >شروع مشاوره</button>
+    </div>
+  </div>
+
+
+</nav>

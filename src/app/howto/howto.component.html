@@ -1,0 +1,89 @@
+<div class="fullScreen">
+  <div class="container">
+
+    <div class="row justify-content-center align-items-center">
+      <div class="col">
+        <h1 class="headerText wow fadeInDown" data-wow-duration=".5s">چگونه با گفتاره مشاوره بگیرم؟</h1>
+        <div class="lineUnderHeader wow fadeInUp" data-wow-duration=".25s" style="background-color: #0092D3;margin-left: calc(50% - 50px);margin-top: 8px"></div>
+      </div>
+    </div>
+
+
+    <div class="desktopMode">
+      <div class="row justify-content-around" style="margin-top: 100px;">
+        <div class="col-4 wow pulse" data-wow-delay=".75s" data-wow-duration=".5s" style="height: 150px">
+          <div class="grayCircle">
+            <p class="number">3</p>
+            <p class="text">مشاوره</p>
+          </div>
+          <p class="desc">بعد از پرداخت به مشاورتان متصل می شوید، زمان جلسات را هماهنگ می کنید و در زمان های مشخص شده مشاوره می گیرید</p>
+        </div>
+        <div class="col-4 wow pulse" data-wow-delay=".5s" data-wow-duration=".5s" style="height: 150px">
+          <div class="grayCircle">
+            <p class="number">2</p>
+            <p class="text">پرداخت</p>
+          </div>
+          <p class="desc">انتخاب یکی از اشتراک ها و پرداخت هزینه آن. از بین اشتراک های دو جلسه ای ، چهار جلسه ای یا شش جلسه مشاوره</p>
+        </div>
+        <div class="col-4 wow pulse" data-wow-delay=".25s" data-wow-duration=".5s" style="height: 150px">
+          <div class="grayCircle">
+            <p class="number">1</p>
+            <p class="text">کارشناس</p>
+          </div>
+          <p class="desc">کارشناس شما را راهنمایی کرده و روانشناس مناسب را برایتان انتخاب می کند</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobileMode">
+      <div class="row" style="margin-top: 30px;height: 130px">
+        <div class="col-10 wow zoomIn" data-wow-duration=".5s" data-wow-delay=".25s">
+          <p class="text">کارشناس</p>
+          <p class="desc">کارشناس شما را راهنمایی کرده و روانشناس مناسب را برایتان انتخاب می کند</p>
+        </div>
+        <div class="col-2">
+          <div class="greenCircle wow bounceIn" data-wow-duration=".5s"></div>
+          <div class="greenLineUnderCircle wow fadeIn" data-wow-delay=".5s" data-wow-duration=".5s"></div>
+        </div>
+      </div>
+      <div class="row" style="height: 130px">
+        <div class="col-10 wow zoomIn" data-wow-duration=".5s" data-wow-delay="1s">
+          <p class="text">پرداخت</p>
+          <p class="desc">انتخاب یکی از اشتراک ها و پرداخت هزینه آن. از بین اشتراک های دو جلسه ای ، چهار جلسه ای یا شش جلسه مشاوره</p>
+        </div>
+        <div class="col-2">
+          <div class="greenCircle wow bounceIn" data-wow-duration=".5s" data-wow-delay=".75s"></div>
+          <div class="greenLineUnderCircle wow fadeIn" data-wow-duration=".5s" data-wow-delay="1.25s"></div>
+        </div>
+      </div>
+      <div class="row" style="height: 150px">
+        <div class="col-10 wow zoomIn" data-wow-duration=".5s" data-wow-delay="1.75s">
+          <p class="text">مشاوره</p>
+          <p class="desc">بعد از پرداخت به مشاورتان متصل می شوید، زمان جلسات را هماهنگ می کنید و در زمان های مشخص شده مشاوره می گیرید</p>
+        </div>
+        <div class="col-2">
+          <div class="greenCircle wow bounceIn" data-wow-duration=".5s" data-wow-delay="1.5s"></div>
+          <div class="greenLineUnderCircle wow fadeIn" data-wow-duration=".5s" data-wow-delay="2s"></div>
+        </div>
+      </div>
+      <div class="row" >
+        <div class="col-10 wow zoomIn" data-wow-duration=".5s" data-wow-delay="2.5s">
+          <p class="text" style="padding-top: 8px">می خواهید مشاوره بگیرید؟</p>
+        </div>
+        <div class="col-2">
+          <div class="greenEdge wow fadeIn" data-wow-duration=".5s" data-wow-delay="2.25s"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center lastRoooooow" [ngClass]="{'wow fadeInUp':isMobile}" [attr.data-wow-delay]="isMobile?'2.75s':null" [attr.data-wow-duration]="isMobile?'.5s':null" style="margin-top: 100px;margin-bottom: 25px">
+      <div class="offset-2 col-7">
+        <button mat-raised-button class="btn" (click)="openRegisterModal()">شروع مشاوره</button>
+        <p class="hint">می خواهید مشاوره بگیرید؟</p>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>

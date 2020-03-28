@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4998 1013.52 20.48 20.48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: gray;
+      }
+    </style>
+  </defs>
+  <g id="check-box" transform="translate(4998 1013.52)">
+    <g id="check-box-outline">
+      <path id="Path_15" data-name="Path 15" class="cls-1" d="M5.575,8.078,3.982,9.671l5.12,5.12L20.48,3.413,18.887,1.82,9.1,11.605ZM18.2,18.2H2.276V2.276H13.653V0H2.276A2.282,2.282,0,0,0,0,2.276V18.2A2.282,2.282,0,0,0,2.276,20.48H18.2A2.282,2.282,0,0,0,20.48,18.2V9.1H18.2Z"/>
+    </g>
+  </g>
+</svg>

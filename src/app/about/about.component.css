@@ -1,0 +1,94 @@
+.headerText{
+  color: #545454;
+  font-size: 32px;
+  text-align: right;
+  margin-bottom: 12px;
+}
+.headerDesc{
+  margin-right: 30px;
+  margin-top: 36px;
+  color: #545454;
+  font-size: 18px;
+  text-align: justify;
+  direction: rtl;
+  line-height: 48px;
+}
+.img1{
+  margin-top: 50px;
+  height: 503px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* all mobile sizes */
+@media only screen and (min-width: 320px) and (max-width: 767px){
+  .fullScreen{
+    margin-top: 40px !important;
+  }
+  .row{
+    padding-bottom: 60px !important;
+  }
+}
+
+/* small mobiles */
+@media only screen and (min-width: 320px) and (max-width: 374px){
+  .headerText{
+    font-size: 22px;
+  }
+  .headerDesc{
+    margin-top: 24px;
+    margin-right: 0;
+    line-height: 32px;
+    font-size: 14px;
+    margin-left: 15px;
+  }
+}
+/* medium mobiles */
+@media only screen and (min-width: 375px) and (max-width: 424px){
+  .headerText{
+    font-size: 24px;
+  }
+  .headerDesc{
+    margin-top: 30px;
+    margin-right: 0;
+    line-height: 36px;
+    font-size: 14px;
+    margin-left: 15px;
+  }
+  .col-12{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* large mobiles */
+@media only screen and (min-width: 425px) and (max-width: 767px){
+  .headerText{
+    font-size: 26px;
+  }
+  .headerDesc{
+    margin-top: 30px;
+    margin-right: 0;
+    line-height: 36px;
+    font-size: 16px;
+    margin-left: 15px;
+  }
+  .col-12{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  .fullScreen{
+    margin-top: 40px !important;
+  }
+  .headerText{
+    font-size: 28px;
+  }
+  .headerDesc{
+    margin-right: 15px;
+    font-size: 16px;
+  }
+}

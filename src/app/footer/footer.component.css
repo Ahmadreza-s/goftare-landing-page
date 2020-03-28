@@ -1,0 +1,198 @@
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
+.socialList{
+  border:0;
+  background: transparent;
+  display: inline-block;
+  float: left;
+}
+.socialList>li{
+  border: none;
+  display: inline-block;
+  padding-right: 20px;
+
+}
+.socialList>li>img{
+  display: inline-block;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.socialText{
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  text-align: right;
+  direction: rtl;
+  float: right;
+}
+.logoText1{
+  font-size: 32px;
+  color: white;
+  text-align: right;
+}
+.logoText2{
+  font-size: 18px;
+  color: white;
+  text-align: right;
+}
+.logoImg{
+  background: url('assets/img/logo_white.svg') no-repeat left;
+}
+.listHeader{
+  color: white;
+  font-size: 20px;
+  text-align: right;
+}
+.listItem{
+  padding:8px 0;
+}
+.listItem > p{
+  color: white;
+  font-size: 18px;
+  text-align: right;
+  cursor: pointer;
+  float: right;
+}
+.emergency{
+  background-color: #0D506D;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  margin-bottom: 0;
+}
+
+/* all mobile sizes */
+@media only screen and (min-width: 320px) and (max-width: 767px){
+  .row:nth-child(1){
+    padding: 20px 0 15px 20px !important;
+  }
+  .logoSection{
+    padding-left: 0;
+  }
+  .logoText1{
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .logoText2{
+    font-size: 18px;
+  }
+  .logoImg{
+    margin-top: -15px;
+  }
+  .socialText{
+    display: block;
+    font-size: 13px;
+    float: unset;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 8px;
+  }
+  .socialList{
+    display: inline;
+  }
+  .socialList>li{
+    padding-right: 10px;
+
+  }
+  .socialList>li>img{
+    width: 20px;
+    height: 20px;
+  }
+  .card{
+    background-color: #1A4354;
+  }
+  .btn-link{
+    font-size: 18px;
+    text-decoration: none !important;
+  }
+  .btn-link>i::after{
+    content: 'arrow_drop_up' !important;
+  }
+  .btn-link.collapsed>i::after{
+    content: 'arrow_drop_down' !important;
+  }
+  .list-group-item{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    text-align: center;
+    color: white;
+    font-size: 16px;
+  }
+  .emergency{
+    font-size: 18px;
+    line-height: 2.5;
+  }
+}
+
+/* small mobiles */
+@media only screen and (min-width: 320px) and (max-width: 374px){
+
+}
+/* medium mobiles */
+@media only screen and (min-width: 375px) and (max-width: 424px){
+
+}
+
+/* large mobiles */
+@media only screen and (min-width: 425px) and (max-width: 767px){
+
+}
+
+/* tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  .row:nth-child(1){
+    padding: 40px 0 15px 20px !important;
+  }
+  .socialList{
+    padding: 0;
+  }
+  .socialList>li{
+    padding-right: 10px;
+  }
+  .socialList>li>img{
+    width: 25px;
+    height: 25px;
+  }
+  .socialText{
+    font-size: 16px;
+    padding: 0;
+  }
+  .logoText1{
+    font-size: 28px;
+  }
+  .logoText2{
+    font-size: 16px;
+  }
+  .listHeader{
+    font-size: 18px;
+  }
+  .listItem{
+    padding:4px 0;
+  }
+  .listItem > p{
+    font-size: 16px;
+  }
+  .emergency{
+    font-size: 18px;
+    padding: 20px 0;
+  }
+}

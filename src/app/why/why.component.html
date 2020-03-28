@@ -1,0 +1,107 @@
+<div class="fullScreen backgroundImage">
+  <div class="container">
+    <div class="row justify-content-center" style="padding-top: 50px;padding-bottom: 20px; ">
+
+      <div class="col order-md-last">
+        <h1 class="headerText wow fadeInDown" data-wow-duration=".5s">چرا مشاوره آنلاین؟</h1>
+        <div class="lineUnderHeader wow slideInRight" data-wow-duration=".25s" style="background-color: #0092D3;float: right;margin-top: 8px"></div>
+      </div>
+
+      <div id="table1" class="col-11 order-last col-md-4 order-md-first table" [style.background]="getBackgroundColor()" [style.opacity]="getOpacity()"
+           (mouseleave)="changeOpacity(false)" (mouseenter)="changeOpacity(true)" >
+        <h1>مشاوره حضوری</h1>
+        <div
+          style="background-color: #EEEEEE;margin-left: calc(50% - 90px);margin-top: 4px;height: 1px;width: 190px;border-radius: 1px"></div>
+
+        <div class="row" [style.background]="getWarningBackgroundColor(0,true)"
+             (mouseleave)="warningVisibility(0,false)" (mouseenter)="warningVisibility(0,true)">
+          <p [style.color]="warning[0].valueOf() ? '#545454':'#808080'">محدود به روانشناسان محل زندگی</p>
+          <img *ngIf="warning[0].valueOf() || isMobile" class="warning" src="assets/img/warning.svg">
+        </div>
+
+
+        <div class="row" [style.background]="getWarningBackgroundColor(1,true)"
+             (mouseleave)="warningVisibility(1,false)" (mouseenter)="warningVisibility(1,true)">
+          <p [style.color]="warning[1].valueOf() ? '#545454':'#808080'">هزینه بالا به ازای هر جلسه</p>
+          <img *ngIf="warning[1].valueOf() || isMobile" class="warning" src="assets/img/warning.svg">
+        </div>
+
+
+        <div class="row" [style.background]="getWarningBackgroundColor(2,true)"
+             (mouseleave)="warningVisibility(2,false)" (mouseenter)="warningVisibility(2,true)">
+          <p [style.color]="warning[2].valueOf() ? '#545454':'#808080'">نیاز به مراجعه حضوری</p>
+          <img *ngIf="warning[2].valueOf() || isMobile" class="warning" src="assets/img/warning.svg">
+        </div>
+
+
+        <div class="row" [style.background]="getWarningBackgroundColor(3,true)"
+             (mouseleave)="warningVisibility(3,false)" (mouseenter)="warningVisibility(3,true)">
+          <p [style.color]="warning[3].valueOf() ? '#545454':'#808080'">نیاز به نوبت گرفتن و انتظار طولانی مدت</p>
+          <img *ngIf="warning[3].valueOf() || isMobile" class="warning" src="assets/img/warning.svg">
+        </div>
+
+
+        <div class="row" [style.background]="getWarningBackgroundColor(4,true)"
+             (mouseleave)="warningVisibility(4,false)" (mouseenter)="warningVisibility(4,true)">
+          <p [style.color]="warning[4].valueOf() ? '#545454':'#808080'">فراموش کردن صحبت های روانشناس</p>
+          <img *ngIf="warning[4].valueOf() || isMobile" class="warning" src="assets/img/warning.svg">
+        </div>
+
+
+      </div>
+      <div id="table2" class="col-11 col-md-4 table" [style.background]="getBackgroundColor()" [style.opacity]="getOpacity()"
+           (mouseleave)="changeOpacity(false)" (mouseenter)="changeOpacity(true)">
+        <h1>مشاوره آنلاین</h1>
+        <div
+          style="background-color: #EEEEEE;margin-left: calc(50% - 90px);margin-top: 4px;height: 1px;width: 190px;border-radius: 1px"></div>
+
+        <div class="row" [style.background]="getWarningBackgroundColor(0,false)"
+             (mouseleave)="warningVisibility(0,false)" (mouseenter)="warningVisibility(0,true)">
+          <p [style.color]="warning[0].valueOf() ? '#545454':'#808080'">دسترسی آسان به روانشناسان معتبر</p>
+          <img *ngIf="warning[0].valueOf() || isMobile" class="warning" src="assets/img/check.svg">
+        </div>
+
+
+        <div class="row" [style.background]="getWarningBackgroundColor(1,false)"
+             (mouseleave)="warningVisibility(1,false) " (mouseenter)="warningVisibility(1,true)">
+          <p [style.color]="warning[1].valueOf() ? '#545454':'#808080'">هزینه پایین و به صرفه</p>
+          <img *ngIf="warning[1].valueOf() || isMobile" class="warning" src="assets/img/check.svg">
+        </div>
+
+
+        <div class="row" [style.background]="getWarningBackgroundColor(2,false)"
+             (mouseleave)="warningVisibility(2,false)" (mouseenter)="warningVisibility(2,true)">
+          <p [style.color]="warning[2].valueOf() ? '#545454':'#808080'">کسی از مشاوره شما با خبر نمی شود</p>
+          <img *ngIf="warning[2].valueOf() || isMobile" class="warning" src="assets/img/check.svg">
+        </div>
+
+
+        <div class="row" [style.background]="getWarningBackgroundColor(3,false)"
+             (mouseleave)="warningVisibility(3,false)" (mouseenter)="warningVisibility(3,true)">
+          <p [style.color]="warning[3].valueOf() ? '#545454':'#808080'">متصل شدن به روانشناس در چند دقیقه</p>
+          <img *ngIf="warning[3].valueOf() || isMobile" class="warning" src="assets/img/check.svg">
+        </div>
+
+
+        <div class="row" [style.background]="getWarningBackgroundColor(4,false)"
+             (mouseleave)="warningVisibility(4,false)" (mouseenter)="warningVisibility(4,true)">
+          <p [style.color]="warning[4].valueOf() ? '#545454':'#808080'">دسترسی همیشگی به مکالمات با روانشناس</p>
+          <img *ngIf="warning[4].valueOf() || isMobile" class="warning" src="assets/img/check.svg">
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="row" style="padding-bottom: 20px">
+      <button (click)="openRegisterModal()" id="btnStart" mat-raised-button class="btn wow fadeInDown">شروع مشاوره</button>
+    </div>
+  </div>
+
+  <!--<div class="footer rounded-top">
+    <p style="margin-right: 18px;">مطالعه بیشتر در مورد</p>
+    <p (click)="goToPage()" style="color: #42A17D;margin-right: 5px;cursor: pointer;">مشاوره آنلاین روانشناسی</p>
+  </div>-->
+
+
+</div>

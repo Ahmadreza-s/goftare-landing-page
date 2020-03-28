@@ -1,0 +1,85 @@
+<app-navbar [path]="'contact'"></app-navbar>
+<div class="fullScreen">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col order-md-last col-md-7 contactUsBackground" >
+        <p class="headerText2">تماس با ما</p>
+        <p class="headerDesc">
+          از طریق این فرم می توانید هر گونه انتقاد، پیشنهاد یا هر موضوعی را که می خواهید با ما در میان بگذارید.<br/>
+          هر پیامی حتی انتقاد باعث دلگرمی و بهبود کار ماست.</p>
+
+        <table class="offset-md-1 col-md-10">
+          <tr style="border-bottom: 1px solid #979797">
+            <td align="center" class="wow fadeIn" (click)="mailTo()">
+              <mat-icon  style="color: white;fill: white" svgIcon="mail"></mat-icon>
+              <p>goftare.co@gmail.com</p>
+            </td>
+            <td align="center" class="wow fadeIn" (click)="call()">
+              <mat-icon style="color: white;fill: white" svgIcon="call"></mat-icon>
+              <p>۰۲۱-۲۸۴۲۹۹۲۶</p>
+            </td>
+          </tr>
+          <tr >
+            <td align="center" class="wow fadeIn" (click)="instagramPage()" >
+              <mat-icon svgIcon="instagram" style="color: white;fill: white"></mat-icon>
+              <p>@goftare_com</p>
+            </td>
+            <td align="center" class="wow fadeIn" (click)="telegramPage()">
+              <mat-icon svgIcon="telegram" style="color: white;fill: white"></mat-icon>
+              <p>@goftare_com</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="col order-md-first col-md-5 contactUsForm" style="padding-bottom: 20px">
+        <div class="offset-md-2 col-md-8">
+          <p class="headerText1">فرم ارسال پیام</p>
+          <form class="example-form" style="margin-top: 60px">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="موضوع" [formControl]="subject" >
+              <mat-error *ngIf="subject.invalid">{{getRequiredError()}}</mat-error>
+            </mat-form-field>
+
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="نام و نام خانوادگی" [formControl]="username" >
+              <mat-error *ngIf="username.invalid">{{getRequiredError()}}</mat-error>
+            </mat-form-field>
+
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="ایمیل" [formControl]="email" >
+              <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
+            </mat-form-field>
+
+            <br>
+
+            <mat-form-field class="example-full-width">
+              <textarea style="resize:none" rows="4" matInput placeholder="متن پیام" [formControl]="message" ></textarea>
+              <mat-error *ngIf="message.invalid">{{getRequiredError()}}</mat-error>
+            </mat-form-field>
+
+
+
+          </form>
+          <button *ngIf="!loading" (click)="sendMessage()" mat-raised-button class="btn sendBtn">ارسال پیام</button>
+          <mat-spinner *ngIf="loading" [diameter]="50" [strokeWidth]="2" style="margin-left: calc(50% - 25px)"></mat-spinner>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<ng-template #successDialog>
+  <mat-icon  style="margin-left: calc(50% - 20px);font-size: 40px;"  [style.color]="dialogIconColor" [svgIcon]="dialogIcon"></mat-icon>
+  <h2 mat-dialog-title style="text-align: center;color: #545454;">{{dialogTitle}}</h2>
+  <mat-dialog-content style="text-align: center;color: #808080">{{dialogBody}}</mat-dialog-content>
+  <mat-dialog-actions style="padding-top: 30px">
+    <button mat-button style="color: #545454;height: 36px;" mat-dialog-close tabindex="-1">قبول</button>
+  </mat-dialog-actions>
+
+</ng-template>

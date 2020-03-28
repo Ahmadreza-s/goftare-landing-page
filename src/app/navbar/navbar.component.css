@@ -1,0 +1,177 @@
+nav{
+  box-shadow: 0 1px 4px #DDDDDD;
+}
+.nav-link{
+  color: #808080;
+  font-size: 16px;
+  margin-bottom: -8px;
+  padding-bottom: 16px;
+}
+.nav-item{
+  padding-left: 25px !important;
+  cursor: pointer;
+
+}
+.nav-link.active{
+  color: #545454;
+  border-bottom: 2px solid #0092D3;
+}
+.btn{
+  color: #0092D3;
+  font-size: 20px;
+  background: transparent;
+  border-radius: .25rem;
+  box-shadow: unset !important;
+  height: 59px;
+  margin-top: -8px;
+  margin-bottom: -8px;
+}
+button:focus{
+  outline: 0 !important;
+}
+.btn12{
+  color: white;
+  font-size: 20px;
+  background-color: #0092D3;
+  box-shadow: unset !important;
+  margin-top: -8px;
+  margin-bottom: -8px;
+  height: 59px;
+  border-radius: 0;
+  padding: 0 25px;
+}
+.navbar-brand{
+  cursor:pointer;
+  color: #545454;
+  font-size: 22px;
+}
+.navbar-brand>img{
+  width: 40px;
+  height: 35px;
+  margin-top: -5px;
+}
+
+
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 52px;
+  left: 0;
+  background-color: rgb(255,255,255);
+  overflow:scroll;
+  transition: 0.5s;
+}
+.overlay.open{
+  height: calc(100% - 52px);
+}
+
+.overlay-content {
+  position: relative;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* all mobile sizes */
+@media only screen and (min-width: 320px) and (max-width: 920px){
+  .navbar-brand{
+    font-size: 17px;
+    margin-right: 50px;
+  }
+  .btn{
+    font-size: 16px;
+  }
+  .navbar-brand>img{
+    width: 20px;
+    height: 25px;
+  }
+  nav{
+    padding-left: 0;
+    padding-right: 8px;
+  }
+  .overlay-content a{
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 25px;
+  }
+  .overlay-content a.active{
+    color: #545454;
+    font-weight: bold !important;
+  }
+  .overlay-content p{
+    margin-top: 65px;
+    font-size: 16px;
+    color: #545454;
+    text-align: center;
+  }
+  .overlay-content button{
+    color: #0092D3;
+    font-size: 16px;
+    border-radius: .25rem;
+    border: 2px solid #0092D3;
+    height: 50px;
+    width: 150px;
+  }
+  .rotateForward{
+    animation: rotation1 .3s linear;
+  }
+  .rotateBack{
+    animation: rotation2 .3s linear;
+  }
+  @keyframes rotation1 {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(-90deg);
+    }
+  }
+  @keyframes rotation2 {
+    from{
+      transform: rotate(-90deg);
+    }
+    to{
+      transform: rotate(0deg);
+    }
+  }
+}
+
+/* small mobiles */
+@media only screen and (min-width: 320px) and (max-width: 374px){
+
+
+}
+/* medium mobiles */
+@media only screen and (min-width: 375px) and (max-width: 424px){
+
+}
+
+/* large mobiles */
+@media only screen and (min-width: 425px) and (max-width: 767px){
+
+}
+
+/* tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+.btn{
+  position: absolute;
+  left: 0;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+}

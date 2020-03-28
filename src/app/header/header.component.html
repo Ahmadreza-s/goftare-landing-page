@@ -1,0 +1,45 @@
+<div class="fullScreen backgroundImage">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col">
+        <!--<div class="float-left">
+          <button mat-button class="signInBtn" (click)="openLoginModal()">
+            ورود
+          </button>
+        </div>-->
+        <div class=" float-right logo">
+          <p>گفتاره</p>
+          <img src="assets/img/logo.svg">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col headerText wow rollIn" data-wow-duration=".5s">
+        به مشاوره نیاز دارید؟
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col headerDesc"  style="direction: rtl">
+        <p  style="font-size: 20px;">به جمع ۴۰۰۰ کاربر گفتاره بپیوندید</p>
+      </div>
+    </div>
+
+    <div class="row btnsContainer ">
+      <div class="col btns">
+        <button mat-raised-button class="btn wow fadeInDown" data-wow-delay=".5s" (click)="openRegisterModal()">
+          <img id="chatIconBtn" style="" src="assets/img/ic_chat.svg">
+
+          شروع مشاوره
+        </button>
+
+        <img [ngx-scroll-to]="'app-psychologists'" [ngx-scroll-to-offset]="-51" id="scrollDownImg" src="assets/img/ic_scroll_down.svg" />
+      </div>
+    </div>
+
+  </div>
+
+
+</div>

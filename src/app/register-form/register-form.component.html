@@ -1,0 +1,48 @@
+<div class="modal-header">
+  <h4 class="modal-title mt1">فرم ثبت نام</h4>
+  <div class="modal-title mt2">
+    <img src="assets/img/logo.svg"/>
+    گفتاره
+  </div>
+
+  <button class="mt2" id="loginBtn" (click)="showLoginDialog()" mat-raised-button>قبلا ثبت نام کردم</button>
+
+
+  <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+    <span style="color:  white" aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <p class="headerTextDialog">برای گرفتن مشاوره، لطفا اطلاعات زیر را پر کنید</p>
+  <form class="example-form" >
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="نام کاربری" [formControl]="username" >
+      <mat-error *ngIf="username.invalid">{{getUsernameErrorMessage()}}</mat-error>
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="ایمیل" [formControl]="email" >
+      <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="رمز عبور" [formControl]="password" [type]="hide ? 'password' : 'text'" autocomplete="new-password"/>
+      <mat-icon *ngIf="password.value.toString().length!=0" matSuffix (click)="hide = !hide" svgIcon="{{hide ? 'visibility_on' : 'visibility_off'}}"></mat-icon>
+      <mat-error *ngIf="password.invalid">{{getPasswordErrorMessage()}}</mat-error>
+    </mat-form-field>
+  </form>
+
+  <p id="rules">
+    با ثبت نام <a target="_blank" href="http://goftare.com/rules">قوانین</a>
+    را پذیرفته اید
+  </p>
+
+  <button *ngIf="!loading" mat-raised-button  class="btn registerBtn" (click)="register()">ثبت نام</button>
+  <mat-spinner *ngIf="loading" [diameter]="50" [strokeWidth]="2" style="margin-left: calc(50% - 25px)"></mat-spinner>
+  <p class="mt1" id="text2">قبلاً ثبت نام کردی؟ <span style="color: #0092D3;cursor: pointer" (click)="showLoginDialog()">ورود</span></p>
+
+</div>
