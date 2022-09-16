@@ -24,7 +24,7 @@
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
     "@nicky-lenaers/ngx-scroll-to": "^0.6.0",
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.3.1",
     "core-js": "^2.4.1",
     "greenlock-express": "^2.0.12",
     "hover.css": "^2.2.1",
